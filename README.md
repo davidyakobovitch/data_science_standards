@@ -63,6 +63,39 @@
 > 17.  For your project, your presentation will showcase the best 3-5 models.  However, it is fine if you have inefficient models that do not perform well, for practice, so keep these in your main modeling Jupyter notebook as a reference. 
 </details>
 
+### Part Four
+<details>
+  <summary><strong>Presentation Guidelines :information_desk_person:</strong></summary>
+
+#### Content Guidelines
+> 1. Cover page aligned to your project theme or organizational template 
+> 2. Table of contents page that discusses the slides covered in your report 
+> 3. At a minimum, presentation should include the following slides below:
+> 4. Problem/Hypothesis(es) page that you explored/offering a solution too
+> 5. Data dictionary page, describing your data
+> 6. Exploratory Data Analysis page, describing data wrangling, feature engineering, and cleaning performed on data
+> 7. Data Visualization pages (no more than 2 visualizations shown on each page for readibility) describing fascinating, insightful visualizations that indicate trends, novel interpretations, or offer clarity and context for your business case.  Either in this section, or the next one to define your baseline/null accuracy for the majority class of hypothesis you are testing to improve results in your scoring.
+> 8. Machine learning page(s) that describe the 3 to 5 best performing models for your project including their metrics and inteprretability to business case. 
+> 9. Summary table that compares your 3 to 5 best machine learning models side-by-side and which model overall performed the best to solve your hypothesis and direct results for your stakeholder or client
+> 10. Concluding remarks on your project and next steps/recommendations slide.
+> 11. Appendix slide that includes Bibliography for research, references, works cited, dataset links, and Github links  
+
+#### Design Requirements
+> 1. To be saved as both .pptx or .key files to Github, as well as the final .pdf presentation file, including a .md markdown Abstract Milestone Report.
+> 2. Code to not be shown in presentation except where necessary to convey an explanation 
+> 3. No more than 3 fonts to be used throughout the entire presentation.
+> 4. Presentation will be between 8 to 20 slides.
+> 5. Presentation format should be self-explained, such that a stakeholder can read the report without you physically being present to explain it. 
+> 6. Presentation should include an Appendix slide that documents resources including dataset links used for your project. 
+
+#### Product Delivery
+> 1. Presentation to be delivered in a 7 to 8 minute format. 
+> 2. Presentation to be delivered for a non-technical stakeholder/client. 
+> 3. All explanations to be related to business case, intepretability, and impact for the business. 
+> 4. Software to delivery to include a screen-share software, including an on-screen annotation delivery (I.e., Open Board, Zoom)
+> 5. Presentation leaves room for Questions & Answers and Feedback session for at most 2 to 3 additional minutes.
+</details>
+
 ## Licenses
 License
 
