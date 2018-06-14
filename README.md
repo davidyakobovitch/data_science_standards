@@ -81,6 +81,7 @@
 > 11. Appendix slide that includes Bibliography for research, references, works cited, dataset links, and Github links  
 
 #### Design Requirements
+> 0. Reorganize all files on Github Project Final as a folder for data, a folder for images saved as assets, readme(s).md, and .ipynb notebooks starting with naming convention 00_datawrangling, 01_eda, 02_visualizations, 03_machinelearning, or similar, etc.
 > 1. To be saved as both .pptx or .key files to Github, as well as the final .pdf presentation file, including a .md markdown Abstract Milestone Report.
 > 2. Code to not be shown in presentation except where necessary to convey an explanation 
 > 3. No more than 3 fonts to be used throughout the entire presentation.
