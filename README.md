@@ -14,6 +14,9 @@
 > 6. Potential stakeholders who would find this interesting: who would be your ideal customer or client for this?
 > 7. Potential places to share your results post project (client, world, website, blog)
 
+> This information can be presented in a PowerPoint presentation.  Consider applying the **SMART** Framework as well as Data Science Methodology to structure for projects with Specific, Measurable, Attainable, Reproducible, and Time-bound goals.  Describe how you will **Frame, Prepare, Analyze, Interpret, and Communicate** your data science challenge.
+-------------------------------------------------------------------------------------------------------------------
+
 **Deliverables:**
 > 1. To be pushed to github
 > 2. To be submitted as a markdown readme.md file in your project-final repository
