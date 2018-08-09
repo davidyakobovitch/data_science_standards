@@ -1,14 +1,21 @@
-##### When working on your data science project, consider the following guidelines as best practices.
+## Data Science Project Guidelines, Version 2.0.1
+
+##### When working on your data science project, consider the following guidelines as best practices to set up your project from start to implementation.
 
 ### Part One
 
 <details>
   <summary><strong>Proposal Requirements :notebook:</strong></summary>
 
-> 1. Project Name: Title for your project 
-> 2. Problem Statement: What are you trying to solve?
-> 2. Data science Hypothesis(es)/solutions considering: One or multiple angles to consider solving this problem with data science  
-> 3. Data sets to be used: Share the links and files, .csvs, .js, .xlsx, .txt, website URLs
+> It is recommended to create several ideas (3 to 5) each on a PowerPoint slide that includes the following components below, to facilitate the scoping of your data science project.
+> After you have identified the project you will work on, then create a markdown (.md) file on Github using the same structure more in-depth, such as an Abstract/Thesis for your project (ideally 300-600 words).  [This is a markdown reference guide.](https://youtu.be/V0fZkWDkPLA)
+
+These criteria are strongly encouraged in scoping out your project: 
+
+> 1. Project Name: What is the Title for your project 
+> 2. Problem Statement: What are you trying to solve? (High-level overarching problem to be explored)
+> 2. Data science Hypothesis(es)/solutions considering: One or multiple angles to consider solving this problem with data science.  This could be as many as 10+ questions for what you are considering to solve through analysis, visualizations, and machine learning 
+> 3. Data sets to be used: Share the links and files, .csvs, .js, .xlsx, .txt, website URLs.  If you are usng web scraping or APIs, note the appropriate links and strategies here as well. Also describe how large are your data files and if you are concerned on any shortcomings of your data.
 > 4. Data dictionaries to describe the data types you're using: write these out in markdown as tables  
 > 5. Potential business cases relative to project: how would this help businesses out to make money or save money or improve accuracy or make better products
 > 6. Potential stakeholders who would find this interesting: who would be your ideal customer or client for this?
