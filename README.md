@@ -37,7 +37,7 @@ These criteria are strongly encouraged in scoping out your project:
 > 1. To create a Jupyter .ipynb notebook for data analysis 
 > 2. Import your data or data files and to save as dataframes 
 > 3. Examine your data, columns and rows and rename and adjust indexing and encoding as appropriate 
-> 4. Clean null and blank values, and consider to drop rows, as well as to manipulate data and adjust data types as appropriate, including dates and time, or setting appropriate indices. Adjusting specific values and replacing strings and characters for the data wrangling process.  
+> 4. Clean null and blank values, and consider to drop rows, as well as to manipulate data and adjust data types as appropriate, including [dates](https://jakevdp.github.io/PythonDataScienceHandbook/03.11-working-with-time-series.html) and [time](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DatetimeIndex.html), or setting appropriate indices. Adjusting specific values and replacing strings and characters for the data wrangling process.  
 > 5. Explore analysis with graphing and visualizations with matplotlib and seaborn and alternative visualization packages (Plotly, bokeh, altair, vincent)
 > 6. Perform additional analysis by creating new columns for calculations, including aggregator functions, counts and groupbys.
 > 7. Encode categorical variables with a variety of techniques through logical conditions, mapping, applying, where clauses, dummy variables, and one hot encoding 
