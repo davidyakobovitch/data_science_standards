@@ -1,4 +1,4 @@
-## Data Science Project Guidelines, Version 2.0.2
+## Data Science Project Guidelines, Version 2.0.3
 
 ##### When working on your data science project, consider the following guidelines as best practices to set up your project from start to implementation.
 
@@ -33,8 +33,9 @@ These criteria are strongly encouraged in scoping out your project:
 ### Part Two
 <details>
   <summary><strong>EDA Guidelines :bar_chart:</strong></summary>
-
-> 1. To create a Jupyter .ipynb notebook for data analysis 
+  
+> 0. Creating a capstone project can result in stress levels on your machine that cause slow processing power.  In order to accelerate your prototyping during the development phase, you can consider a cloud solution offering such as [Google Colab](https://colab.research.google.com/), [Microsoft Notebooks](https://notebooks.azure.com/) and [IBM Notebooks](https://dataplatform.cloud.ibm.com/docs/content/analyze-data/notebooks-parent.html).  If you are looking for more advanced infrastructure, consider providers such as [Amazon Web Services](https://aws.amazon.com/), [Microsoft Azure](http://azure.microsoft.com/), [Google Cloud Platform](https://cloud.google.com/gcp), and [IBM Watson Data Studio](https://www.ibm.com/cloud/watson-studio).  If you are looking for instant container solutions for data science projects, consider [Crestle](https://www.crestle.com/) and [Paperspace](https://www.paperspace.com/)
+> 1. To start, please be sure to create Notebooks that you code your data analysis in.  These notebooks should be through the Jupyter framework, which support .ipynb (iPython Notebooks) and .md (Markdown) files, as well as interactivity between both, which can be displayed effectively through a Github environment or [Binder](https://mybinder.org/). 
 > 2. Import your data or data files and to save as dataframes 
 > 3. Examine your data, columns and rows and rename and adjust indexing and encoding as appropriate 
 > 4. Clean null and blank values, and consider to drop rows, as well as to manipulate data and adjust data types as appropriate, including [dates](https://jakevdp.github.io/PythonDataScienceHandbook/03.11-working-with-time-series.html) and [time](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DatetimeIndex.html), or setting appropriate indices. Adjusting specific values and replacing strings and characters for the data wrangling process.  
