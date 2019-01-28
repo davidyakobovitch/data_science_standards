@@ -4,12 +4,23 @@
 
 ##### These guidelines are focused for the Python developer ecosystem.  If you are interested in additional resources, consider some of the following links to explore such as the [distinctions between Python and R](https://www.quora.com/Whats-the-difference-between-machine-learning-in-Python-and-R).  There is a broad scope of resources to learn in Python including these [cheatsheets](https://github.com/chrisallenlane/cheat/tree/master/cheat/cheatsheets) for common integrations with the Python language.  I am confident that with these resources below, your journey will be fruitful for your learning and career.
 
-### Part One
+##### Other languages: The world of Data Science is rich with algorithms, and multiple languages can support your learning journey.  From Python to C++, you can learn more about the popularity of programming languages with the [Tiobe Index](https://www.tiobe.com/tiobe-index/).
 
-<details>
-  <summary><strong>Proposal Requirements :notebook:</strong></summary>
+### Part One: Project Proposal Requirements :notebook:
 
-> It is recommended to create several ideas (3 to 5) each on a PowerPoint slide that includes the following components below, to facilitate the scoping of your data science project.  When considering for a project to create, start here on [how to ask Data Science questions](https://towardsdatascience.com/how-to-ask-questions-data-science-can-solve-e073d6a06236) or [asking insightful questions](https://amplitude.com/blog/2015/07/01/question-the-data-how-to-ask-the-right-questions-to-get-actionable-insights).
+Data Science problems are *business problems*.
+
+The field of Big Data has transformed Data Modeling and Data Analytics into Data Science and Data Engineering careers.
+
+Your mission, if you choose to accept, is to select a business problem with a SMART value proposition, that can be solved as a data problem.
+
+Instructions:
+Brainstorm 5 business problems that you would like to better understand and solve with data science.  
+
+Reading Material:
+1. [How to ask Data Science questions](https://towardsdatascience.com/how-to-ask-questions-data-science-can-solve-e073d6a06236)
+2. [Asking insightful questions](https://amplitude.com/blog/2015/07/01/question-the-data-how-to-ask-the-right-questions-to-get-actionable-insights)
+
 > After you have identified the project you will work on, then create a markdown (.md) file on Github using the same structure more in-depth, such as an Abstract/Thesis for your project (ideally 300-600 words).  [This is a markdown reference guide.](https://youtu.be/V0fZkWDkPLA)
 
 These criteria are strongly encouraged in scoping out your project: 
