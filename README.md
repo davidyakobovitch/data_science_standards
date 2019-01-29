@@ -6,16 +6,49 @@ These guidelines are focused for the Python developer ecosystem.  If you are int
 
 Other languages: The world of Data Science is rich with algorithms, and multiple languages can support your learning journey.  From Python to C++, you can learn more about the popularity of programming languages with the [Tiobe Index](https://www.tiobe.com/tiobe-index/).
 
-### Part One: Project Proposal Requirements :notebook:
+### Part One: Project Proposal Requirements:
 
-Data Science problems are *business problems*.
+Data Science problems are **business problems**.
 
 The field of Big Data has transformed Data Modeling and Data Analytics into Data Science and Data Engineering careers.
 
-Your mission, if you choose to accept, is to select a business problem with a SMART value proposition, that can be solved as a data problem.
+One way to approach formulating a question is through goal-setting via the SMART Goals Framework:
 
-Instructions:
-Brainstorm 5 business problems that you would like to better understand and solve with data science.  
+1. Specific: The data set and key variables are clearly defined.
+2. Measurable: The type of analysis and major assumptions are articulated.
+3. Attainable: The question you are asking is feasible for your data set and not likely to be biased.
+4. Reproducible: Another person (or future you) can read and understand exactly how your analysis is 5. performed.
+6. Time-bound: You clearly state the time period and population to which this analysis pertains.
+
+What Are Some Common Questions Asked in Data Science?
+Machine learning more or less asks the following questions:
+
+Does X predict Y? (Where X is a set of data and y is an outcome.)
+- Are there any distinct groups in our data?
+- What are the key components of our data?
+- Is one of our observations “weird”?
+
+From a business perspective, we can ask:
+- What is the likelihood that a customer will buy this product?
+- Is this a good or bad review?
+- How much demand will there be for my service tomorrow?
+- Is this the cheapest way to deliver my goods?
+- Is there a better way to segment my marketing strategies?
+- What groups of products are customers purchasing together?
+- Can we automate this simple yes/no decision?
+
+*Note: This list may seem limited, but we rewrite most questions to fit this form.*
+
+**Steps in the Data Science Workflow:**
+1. Frame: Develop a hypothesis-driven approach to your analysis.
+2. Prepare: Select, import, explore, and clean your data.
+3. Analyze: Structure, visualize, and complete your analysis.
+4. Interpret: Derive recommendations and business decisions from your data.
+5. Communicate: Present (edited) insights from your data to different audiences.
+
+Student Instructions:
+1. Brainstorm 5 business problems that you would like to better understand and solve with data science.  
+2. Using the above frameworks for SMART and the Data Science Workflow, include these steps in your Project Proposal.
 
 Reading Material:
 1. [How to ask Data Science questions](https://towardsdatascience.com/how-to-ask-questions-data-science-can-solve-e073d6a06236)
@@ -38,10 +71,10 @@ These criteria are strongly encouraged in scoping out your project:
 -------------------------------------------------------------------------------------------------------------------
 
 **Deliverables:**
-> 1. To be pushed to github
-> 2. To be submitted as a markdown readme.md file in your project-final repository
-</details>
-
+> 1. Submit the project proposal as a push to your Github directory with this data science project
+> 2. The project proposal should be submit as a Markdown file ending in .md extension.
+> 3. You can include any types of markdown, LaTeX, text, and images that you find relevant for your project proposal or research abstract.
+> 4. This presentation should be simple, that it can be read and understood by non-technical individuals or business stakeholders.
 
 ### Part Two
 <details>
