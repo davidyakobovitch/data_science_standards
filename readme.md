@@ -1,5 +1,5 @@
 <font size="6em"><strong>Data Science Standards</strong></font>
-
+<br>
 <strong>What are the Data Science Standards?</strong>
 The Data Science Standards are a proven process at both the university and the bootcamp level for students to create production grade machine learning for their portfolio, to excel in the job interview.  This process has been stress-tested with over 2,000 students and offers you the following:
 
