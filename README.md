@@ -1,4 +1,19 @@
-## Data Science Project Guidelines, Version 2.0.43
+<font size="6em"><strong>Data Science Standards</strong></font>
+
+<strong>What are the Data Science Standards?</strong>
+The Data Science Standards are a proven process at both the university and the bootcamp level for students to create production grade machine learning for their portfolio, to excel in the job interview.  This process has been stress-tested with over 2,000 students and offers you the following:
+
+<ul>
+<li> A Framework that leads to confidence in job interviews</li>
+<li> A portfolio to share with prospective employers</li>
+<li> A standard mental model and business framework to solving production grade machine learning </li>
+<li> A central repository for state of the art resources for production grade data science</li>
+</ul>
+
+<!-- 
+Why do I need the Data Science Standards?
+Table of Contents
+-->
 
 Data science projects require structure.  In essence, you are solving data problems by applying the scientific method.  The following guidelines have been refined with over 2,000 data science students, and is a continuous iteration for building capstone projects for your data science or data engineering portfolio.  If you would like to contribute to the material, you are welcome to share across your considerations, and offer these guidelines with attribution to your colleagues as well.
 
