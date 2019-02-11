@@ -138,22 +138,20 @@ Exploratory data analysis is the first major step in a capstone project for your
 > 18. If you chose to work with .py scripts, here is a [method to rename these files](https://stackoverflow.com/questions/2759067/rename-multiple-files-in-a-directory-in-python/24954254).
 </details>
 
-### Part Four
-<details>
-  <summary><strong>Presentation Guidelines :information_desk_person:</strong></summary>
-
-#### Content Guidelines
-> 1. Cover page aligned to your project theme or organizational template 
-> 2. Table of contents page that discusses the slides covered in your report 
-> 3. At a minimum, presentation should include the following slides below:
-> 4. Problem/Hypothesis(es) page that you explored/offering a solution too
-> 5. Data dictionary page, describing your data
-> 6. Exploratory Data Analysis page, describing data wrangling, feature engineering, and cleaning performed on data
-> 7. Data Visualization pages (no more than 2 visualizations shown on each page for readibility) describing fascinating, insightful visualizations that indicate trends, novel interpretations, or offer clarity and context for your business case.  Either in this section, or the next one to define your baseline/null accuracy for the majority class of hypothesis you are testing to improve results in your scoring.
-> 8. Machine learning page(s) that describe the 3 to 5 best performing models for your project including their metrics and inteprretability to business case. 
-> 9. Summary table that compares your 3 to 5 best machine learning models side-by-side and which model overall performed the best to solve your hypothesis and direct results for your stakeholder or client
-> 10. Concluding remarks on your project and next steps/recommendations slide.
-> 11. Appendix slide that includes Bibliography for research, references, works cited, dataset links, and Github links  
+### Part Four: Design Thinking - Prepare Your Presentation
+<ol>
+<li>Cover Page: Include the Project Title, Your Name, Github URL, and an Image</li>
+<li>Table of Contents Page: Describes the details of each slide in your presentation</li>
+<li>Problem Statement Page: Describe in depth the problem, Hypothesis Statements, and Solutions</li>
+<li>Data Dictionary Page: Describe the data types, multiple data sets, file types, and size of data</li>
+<li>Data Wrangling Page: Describes Feature Engineering techniques implemented, pre-processing, pipeline, and data cleansing</li> 
+<li>Data Visualizations Pages: Up to 2 visualizations per page, describing impactful observations, trends, and correlations for your business case.</li>
+<li>Baseline Hypothesis Page: Establish your metrics of baseline or null accuracy to measure how significant your machine learning models perform.</li>
+<li>Machine Learning Models: Describe your 3 best performing models on individual pages, and their metrics compared to baseline and their scorings.</li> 
+<li>Summary ML Page: Compare your 3 best performing models in 1 Summary Table with their lift and results measured against baseline.</li>
+<li>Conclusion Page: Include Recommendation, Next Steps, and Action Items</li>
+<li>Appendix Page: Include Bibliography, Works Cited, Dataset Links, Github Links</li>
+</ol>  
 
 #### Design Requirements
 > 0. Reorganize all files on Github Project Final as a folder for data, a folder for images saved as assets, readme(s).md, and .ipynb notebooks starting with naming convention 00_datawrangling, 01_eda, 02_visualizations, 03_machinelearning, or similar, etc.
