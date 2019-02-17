@@ -85,7 +85,7 @@ These criteria are strongly encouraged in scoping out your project:
 > This information can be presented in a PowerPoint presentation.  Consider applying the **SMART** Framework as well as Data Science Methodology to structure for projects with Specific, Measurable, Attainable, Reproducible, and Time-bound goals.  Describe how you will **Frame, Prepare, Analyze, Interpret, and Communicate** your data science challenge.
 -------------------------------------------------------------------------------------------------------------------
 
-**Deliverables:**
+## Capstone Deliverables:
 > 1. Submit the project proposal as a push to your Github directory with this data science project
 > 2. The project proposal should be submit as a Markdown file ending in .md extension.
 > 3. You can include any types of markdown, LaTeX, text, and images that you find relevant for your project proposal or research abstract.
@@ -111,7 +111,6 @@ Exploratory data analysis is the first major step in a capstone project for your
 > 14. To create a markdown .md milestone report that shows and explains the results of what you have accomplished to date in this part of your course project. Consider also creating a .pdf or .pptx to display initial results, aha moments, or findings that would be novel or fascinating for your final presentations. 
 
 ### Part Three: Machine Learning Guidelines  
-
 > 0. Create a brand new Jupyter notebook, where you run the latest DataFrame or .csv files(s) that you have previously saved from your exploratory data analysis notebook. 
 > 1. After you have completed the exploratory data analysis section of your project, start revisiting your hypothesis(es) on ideas that you would like to either predict (regression) or classify (classifier).  > 2. Have you identified a specific column or multiple columns that could be treated as response or target variables to predict/classify?
 > 3. If not, consider performing additional exploratory analysis that helps you pinpoint a potential working hypothesis to test results against. You could consider [clustering techniques](http://scikit-learn.org/stable/modules/clustering.html) as an addition to exploratory data analysis as a preparation for machine learning, including [TSNE Clustering](http://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html)
@@ -150,7 +149,7 @@ Exploratory data analysis is the first major step in a capstone project for your
 <ol>
 <li> Github Organization: Create one parent directory for your project, with separate Jupyter Notebooks for each section, a data folder, and an assets folder for images.</li>
 <li> Final presentation to be shared as a Google Slides presentation or Microsoft PowerPoint or React Native Slides</li>
-<li> Presentation to focus on business analysis, insights, and business impact with graphs, and machine learning output.  Minimal, if any, code should be shown in presentation.<li> 
+<li> Presentation to focus on business analysis, insights, and business impact with graphs, and machine learning output.  Minimal, if any, code should be shown in presentation.</li> 
 <li> Presentation should use maximum of 3 fonts.</li>
 <li> Maximum of 20 slides.</li>
 <li> Can be interpreted if sent as a cold e-mail without you presenting your report.</li>
