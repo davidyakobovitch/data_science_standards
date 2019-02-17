@@ -91,10 +91,7 @@ These criteria are strongly encouraged in scoping out your project:
 > 3. You can include any types of markdown, LaTeX, text, and images that you find relevant for your project proposal or research abstract.
 > 4. This presentation should be simple, that it can be read and understood by non-technical individuals or business stakeholders.
 
-### Part Two
-<details>
-  <summary><strong>EDA Guidelines :bar_chart:</strong></summary>
-
+### Part Two: Exploratory Data Analysis Guidelines
 Exploratory data analysis is the first major step in a capstone project for your portfolio.  From collecting and cleaning data, to analyzing and displaying the data, your data wrangling or feature engineering journey will prepare your project for a successful machine learning implementation.
  
 > 0. Creating a capstone project can result in stress levels on your machine that cause slow processing power. If you are interested to measure your results consider [timing processing](http://pynash.org/2013/03/06/timing-and-profiling/).  In order to accelerate your prototyping during the development phase, you can consider a cloud solution offering such as [Google Colab](https://colab.research.google.com/) and [importing data into Google Colab](https://stackoverflow.com/questions/46986398/import-data-into-google-colaboratory), [Microsoft Notebooks](https://notebooks.azure.com/) and [IBM Notebooks](https://dataplatform.cloud.ibm.com/docs/content/analyze-data/notebooks-parent.html).  If you are looking for more advanced infrastructure, consider providers such as [Amazon Web Services](https://aws.amazon.com/), [Microsoft Azure](http://azure.microsoft.com/), [Google Cloud Platform](https://cloud.google.com/gcp), and [IBM Watson Data Studio](https://www.ibm.com/cloud/watson-studio).  If you are looking for instant container solutions for data science projects, consider [Crestle](https://www.crestle.com/) and [Paperspace](https://www.paperspace.com/)
@@ -112,12 +109,9 @@ Exploratory data analysis is the first major step in a capstone project for your
 > 12. Merge or concatenate datasets with [Pandas merging](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.merge.html), or SQL methods (I.e., [Learning SQL](https://www.quora.com/What-some-of-the-websites-where-I-can-practice-Advance-SQL), [SQL Joins](http://sqlhints.com/tag/cross-join/), [Joins #2](https://stackoverflow.com/questions/38549/what-is-the-difference-between-inner-join-and-outer-join), [Joins #3](https://stackoverflow.com/questions/17759687/cross-join-vs-inner-join-in-sql-server-2008), [SQL Tutorial](https://community.modeanalytics.com/sql/tutorial/introduction-to-sql/), and [Saving Queries](https://stackoverflow.com/questions/31769736/saving-sql-queries-as-sql-text-file) if you have not already, based on common keys or unique items for more in-depth analysis.  Additional SQL resources include the [SQL Cookbook](https://www.amazon.com/SQL-Cookbook-Solutions-Techniques-Developers/dp/0596009763/ref=sr_1_3?ie=UTF8&qid=1548602827&sr=8-3&keywords=sql+cookbook) and [Seven Databases](https://www.amazon.com/Seven-Databases-Weeks-Modern-Movement-ebook/dp/B07CYLX6FD/ref=sr_1_1?ie=UTF8&qid=1548602862&sr=8-1&keywords=seven+database+design).
 > 13. Add commenting and markdown throughout the jupyter notebook to explain the interpretation of your results or to comment on code that may not be human readable, and help you recall for you what you are referencing. (Markdown references: [Latex Cheatsheet](https://www.nyu.edu/projects/beber/files/Chang_LaTeX_sheet.pdf), [Markdown for Jupyter Notebooks](https://medium.com/ibm-data-science-experience/markdown-for-jupyter-notebooks-cheatsheet-386c05aeebed), [LaTeX in Notebooks](https://stackoverflow.com/questions/13208286/how-to-write-latex-in-ipython-notebook), [Markdown Intro](https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Working%20With%20Markdown%20Cells.html), [CommonMark](https://commonmark.org/), 
 > 14. To create a markdown .md milestone report that shows and explains the results of what you have accomplished to date in this part of your course project. Consider also creating a .pdf or .pptx to display initial results, aha moments, or findings that would be novel or fascinating for your final presentations. 
-</details>
 
-### Part Three
-<details>
-  <summary><strong>Machine Learning Guidelines :computer:</strong></summary>
-  
+### Part Three: Machine Learning Guidelines  
+
 > 0. Create a brand new Jupyter notebook, where you run the latest DataFrame or .csv files(s) that you have previously saved from your exploratory data analysis notebook. 
 > 1. After you have completed the exploratory data analysis section of your project, start revisiting your hypothesis(es) on ideas that you would like to either predict (regression) or classify (classifier).  > 2. Have you identified a specific column or multiple columns that could be treated as response or target variables to predict/classify?
 > 3. If not, consider performing additional exploratory analysis that helps you pinpoint a potential working hypothesis to test results against. You could consider [clustering techniques](http://scikit-learn.org/stable/modules/clustering.html) as an addition to exploratory data analysis as a preparation for machine learning, including [TSNE Clustering](http://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html)
@@ -136,7 +130,6 @@ Exploratory data analysis is the first major step in a capstone project for your
 > 16. If you are scraping additional data, consider python packages such as Selenium and BeautifulSoup4.
 > 17.  For your project, your presentation will showcase the best 3-5 models.  However, it is fine if you have inefficient models that do not perform well, for practice, so keep these in your main modeling Jupyter notebook as a reference. 
 > 18. If you chose to work with .py scripts, here is a [method to rename these files](https://stackoverflow.com/questions/2759067/rename-multiple-files-in-a-directory-in-python/24954254).
-</details>
 
 ### Part Four: Design Thinking - Prepare Your Presentation
 <ol>
@@ -153,22 +146,20 @@ Exploratory data analysis is the first major step in a capstone project for your
 <li>Appendix Page: Include Bibliography, Works Cited, Dataset Links, Github Links</li>
 </ol>  
 
-#### Design Requirements
-> 0. Reorganize all files on Github Project Final as a folder for data, a folder for images saved as assets, readme(s).md, and .ipynb notebooks starting with naming convention 00_datawrangling, 01_eda, 02_visualizations, 03_machinelearning, or similar, etc.
-> 1. To be saved as both .pptx or .key files to Github, as well as the final .pdf presentation file, including a .md markdown Abstract Milestone Report.
-> 2. Code to not be shown in presentation except where necessary to convey an explanation 
-> 3. No more than 3 fonts to be used throughout the entire presentation.
-> 4. Presentation will be between 8 to 20 slides.
-> 5. Presentation format should be self-explained, such that a stakeholder can read the report without you physically being present to explain it. 
-> 6. Presentation should include an Appendix slide that documents resources including dataset links used for your project. 
-
-#### Product Delivery
-> 1. Presentation to be delivered in a 7 to 8 minute format. 
-> 2. Presentation to be delivered for a non-technical stakeholder/client. 
-> 3. All explanations to be related to business case, intepretability, and impact for the business. 
-> 4. Software to delivery to include a screen-share software, including an on-screen annotation delivery (I.e., Open Board, Zoom)
-> 5. Presentation leaves room for Questions & Answers and Feedback session for at most 2 to 3 additional minutes.
-</details>
+#### Design and Product Requirements
+<ol>
+<li> Github Organization: Create one parent directory for your project, with separate Jupyter Notebooks for each section, a data folder, and an assets folder for images.</li>
+<li> Final presentation to be shared as a Google Slides presentation or Microsoft PowerPoint or React Native Slides</li>
+<li> Presentation to focus on business analysis, insights, and business impact with graphs, and machine learning output.  Minimal, if any, code should be shown in presentation.<li> 
+<li> Presentation should use maximum of 3 fonts.</li>
+<li> Maximum of 20 slides.</li>
+<li> Can be interpreted if sent as a cold e-mail without you presenting your report.</li>
+<li> Appendix Slide for Works Cited, Bibliography, and Links must be included.</li>
+<li> Presentation delivery to not exceed 8 minutes </li>
+<li> Presentation delivery to be for non-technical stakeholder (Also known as "Teach me like I am 5")</li>
+<li> Presentation Delivery on Google Hangouts, Skype, or Zoom </li>
+<li> Be prepared for a Q&A sesssion for 3 to 5 minutes</li>
+</ol>
 
 #### Additional Notes
 > 1. Consider that you could save all your plots to [an overall PDF](https://stackoverflow.com/questions/17788685/python-saving-multiple-figures-into-one-pdf-file).
