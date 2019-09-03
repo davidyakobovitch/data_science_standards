@@ -130,20 +130,38 @@ Exploratory data analysis is the first major step in a capstone project for your
 > 17.  For your project, your presentation will showcase the best 3-5 models.  However, it is fine if you have inefficient models that do not perform well, for practice, so keep these in your main modeling Jupyter notebook as a reference. 
 > 18. If you chose to work with .py scripts, here is a [method to rename these files](https://stackoverflow.com/questions/2759067/rename-multiple-files-in-a-directory-in-python/24954254).
 
-### Part Four: Design Thinking - Prepare Your Presentation
-<ol>
-<li>Cover Page: Include the Project Title, Your Name, Github URL, and an Image</li>
-<li>Table of Contents Page: Describes the details of each slide in your presentation</li>
-<li>Problem Statement Page: Describe in depth the problem, Hypothesis Statements, and Solutions</li>
-<li>Data Dictionary Page: Describe the data types, multiple data sets, file types, and size of data</li>
-<li>Data Wrangling Page: Describes Feature Engineering techniques implemented, pre-processing, pipeline, and data cleansing</li> 
-<li>Data Visualizations Pages: Up to 2 visualizations per page, describing impactful observations, trends, and correlations for your business case.</li>
-<li>Baseline Hypothesis Page: Establish your metrics of baseline or null accuracy to measure how significant your machine learning models perform.</li>
-<li>Machine Learning Models: Describe your 3 best performing models on individual pages, and their metrics compared to baseline and their scorings.</li> 
-<li>Summary ML Page: Compare your 3 best performing models in 1 Summary Table with their lift and results measured against baseline.</li>
-<li>Conclusion Page: Include Recommendation, Next Steps, and Action Items</li>
-<li>Appendix Page: Include Bibliography, Works Cited, Dataset Links, Github Links</li>
-</ol>  
+### Part Four: Presentation Design
+#### Presentation Skeleton for Data Science, Solution Engineering & Customer Experience
+
+- Title Page:
+  - Project Title 
+  - Name 
+  - Job Title, Organizational Title 
+- Agenda Page: 
+  - Sections to be covered, and time for each section 
+- Introductions: 
+  - Introduction to your Stakeholders
+  - Introduction to you 
+- Problem Statement:
+  - Describe in Depth the Problem 
+  - Solution(s) technical/non-technical to the problem 
+- Data Analysis Slide(s):
+  - Techniques, Software stack, platforms used 
+  - Data Dictionary, Feature Engineering
+  - Benchmarked metrics to discover
+  - Visualizations of analytics with business context 
+- Machine Learning Slide(s):
+  - Metrics and Scoring with analytics with best scoring models and business context 
+  - Describe how metrics are scored to baseline 
+- Deployment:
+  - How Machine Learning solution will be Deployed
+- Conclusion Slide:
+  - Recommendations and Results with business context
+  - Future Research and Analysis 
+- Next Steps slide:
+  - Contact, Github URL, Presentation Link, and Call to Action 
+ Appendix:
+  - Works Cited and Media Resources 
 
 #### Design and Product Requirements
 <ol>
