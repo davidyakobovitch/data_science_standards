@@ -73,10 +73,10 @@ Reading Material:
 
 ## Project Proposal Criteria:
 > _Please prepare your project proposal as a sharable document, and a PowerPoint/Google Slides presentation_
-1. Project Title
+**1. Project Title**
 - What is your Project Theme?
 - What is an Abstract - 1 paragraph Executive Summary of your Solution?
-2. Problem Statement/ Business Case
+**2. Problem Statement & Business Case**
 - What is the technical problem you are solving?
 - What is the applied business case for this problem?> 3. Data Science Workflow 
 - What Null/Alternative Hypothesis are you testing against?
@@ -88,20 +88,20 @@ Reading Material:
 - What is the business case for your project? 
 - How will your solution help generate revenue, reduce costs, or impact another Key Performance Indicator or Objective Key Result?
 - Who will be impacted (Executive Stakeholders/Sponsors) by your solution? Who is your ideal client/customer?
-3. Data Collection
+**3. Data Collection**
 - What raw datasets will you extract for machine learning?
 - Is the data from open-source, paid crowdsourcing, internal?
 - What is the structures, file types, and quality of the data?
 - How will you collect the data?
 - Of your known data, what is the current data dictionaries that exist, or that you can further describe? (You can create these data dictionaries in a spreadsheet, markdown table, or listed)
-4. Data Processing, Preparation, and Feature Engineering
+**4. Data Processing, Preparation, & Feature Engineering**
 - What techniques will you use to improve your data quality?
 - How will you handle missing data and outliers?
 - What calculations/formulas would you like to create, that may not yet exist?
-5. Machine Learning - Model Selection
+**5. Machine Learning: Model Selection**
 - Which model architecture(s) will you use to solve your problem?
 - How will you validate the model performance?
-6. Model Persistence - Deployment, Training, & Data Pipelines
+**6. Model Persistence: Deployment, Training, & Data Pipelines**
 - How would your results operate LIVE in a production environment?
 - What technology stack, what integrations, and which Engineers would you cooperate?
 - Where will you share your results internally or externally to stakeholders through Marketing, Implementation and Deployments?
@@ -109,10 +109,10 @@ Reading Material:
 
 -------------------------------------------------------------------------------------------------------------------
 ## Capstone Deliverables:
-> 1. Submit the project proposal as a push to your Github directory with this data science project
-> 2. The project proposal should be submit as a Markdown file ending in .md extension.
-> 3. You can include any types of markdown, LaTeX, text, and images that you find relevant for your project proposal or research abstract.
-> 4. This presentation should be simple, that it can be read and understood by non-technical individuals or business stakeholders.
+1. Submit the project proposal as a push to your Github directory with this data science project
+2. The project proposal should be submit as a Markdown file ending in .md extension.
+3. You can include any types of markdown, LaTeX, text, and images that you find relevant for your project proposal or research abstract.
+4. This presentation should be simple, that it can be read and understood by non-technical individuals or business stakeholders.
 
 ### Part Two: Exploratory Data Analysis Guidelines
 Exploratory data analysis is the first major step in a capstone project for your portfolio.  From collecting and cleaning data, to analyzing and displaying the data, your data wrangling or feature engineering journey will prepare your project for a successful machine learning implementation.
