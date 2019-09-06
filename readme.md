@@ -71,18 +71,42 @@ Reading Material:
 
 > After you have identified the project you will work on, then create a markdown (.md) file on Github using the same structure more in-depth, such as an Abstract/Thesis for your project (ideally 300-600 words).  [This is a markdown reference guide.](https://youtu.be/V0fZkWDkPLA)
 
-These criteria are strongly encouraged in scoping out your project: 
+## Project Proposal Criteria:
+> _Please prepare your project proposal as a sharable document, and a PowerPoint/Google Slides presentation_
+> 1. Project Title
+>> What is your Project Theme?
+>> What is an Abstract - 1 paragraph Executive Summary of your Solution?
+> 2. Problem Statement/ Business Case
+>> What is the technical problem you are solving?
+>> What is the applied business case for this problem?> 3. Data Science Workflow 
+>> What Null/Alternative Hypothesis are you testing against?
+>> What solutions would you like to deliver against?
+>> What benchmarks are you looking to automate?
+>> What alternative questions would you like to explore and provide solutions?
+>> What analytics and insights would you like to discover from your data? 
+>> What types of graphics or machine learnings would you like to discover?
+>> What is the business case for your project? 
+>> How will your solution help generate revenue, reduce costs, or impact another Key Performance Indicator or Objective Key Result?
+>> Who will be impacted (Executive Stakeholders/Sponsors) by your solution? Who is your ideal client/customer?
+> 3. Data Collection
+>> What raw datasets will you extract for machine learning?
+>> Is the data from open-source, paid crowdsourcing, internal?
+>> What is the structures, file types, and quality of the data?
+>> How will you collect the data?
+>> Of your known data, what is the current data dictionaries that exist, or that you can further describe? (You can create these data dictionaries in a spreadsheet, markdown table, or listed)
+> 4. Data Processing, Preparation, and Feature Engineering
+>> What techniques will you use to improve your data quality?
+>> How will you handle missing data and outliers?
+>> What calculations/formulas would you like to create, that may not yet exist?
+> 5. Machine Learning - Model Selection
+>> Which model architecture(s) will you use to solve your problem?
+>> How will you validate the model performance?
+> 6. Model Persistence - Deployment, Training, & Data Pipelines
+>> How would your results operate LIVE in a production environment?
+>> What technology stack, what integrations, and which Engineers would you cooperate?
+>> Where will you share your results internally or externally to stakeholders through Marketing, Implementation and Deployments?
+>> How will you validate your machine learnings with a timeline from development to production?  How will you generate more data to train?
 
-> 1. Project Name: What is the Title for your project 
-> 2. Problem Statement: What are you trying to solve? (High-level overarching problem to be explored)
-> 2. Data science Hypothesis(es)/solutions considering: One or multiple angles to consider solving this problem with data science.  This could be as many as 10+ questions for what you are considering to solve through analysis, visualizations, and machine learning 
-> 3. Data sets to be used: Share the links and files, .csvs, .js, .xlsx, .txt, website URLs.  If you are usng web scraping or APIs, note the appropriate links and strategies here as well. Also describe how large are your data files and if you are concerned on any shortcomings of your data.
-> 4. Data dictionaries to describe the data types you're using: write these out in markdown as tables  
-> 5. Potential business cases relative to project: how would this help businesses out to make money or save money or improve accuracy or make better products
-> 6. Potential stakeholders who would find this interesting: who would be your ideal customer or client for this?
-> 7. Potential places to share your results post project (client, world, website, blog)
-
-> This information can be presented in a PowerPoint presentation.  Consider applying the **SMART** Framework as well as Data Science Methodology to structure for projects with Specific, Measurable, Attainable, Reproducible, and Time-bound goals.  Describe how you will **Frame, Prepare, Analyze, Interpret, and Communicate** your data science challenge.
 -------------------------------------------------------------------------------------------------------------------
 
 ## Capstone Deliverables:
