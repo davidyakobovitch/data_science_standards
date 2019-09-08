@@ -4,115 +4,64 @@
 The Data Science Standards are a proven process at both the university and the bootcamp level for students to create production grade machine learning for their portfolio, to excel in the job interview.  This process has been stress-tested with over 2,000 students and offers you the following:
 
 <ul>
-<li> A Framework that leads to confidence in job interviews</li>
-<li> A portfolio to share with prospective employers</li>
-<li> A standard mental model and business framework to solving production grade machine learning </li>
-<li> A central repository for state of the art resources for production grade data science</li>
+<li> A Framework that leads to confidence with client success and career interviews</li>
+<li> A portfolio to share as Proof of Concepts to clients and for career opportunities</li>
+<li> A Standard for mental model and business framework to solving production grade machine learning </li>
+<li> An organized, and centralized repository for state of the art resources for production grade data science</li>
+<li> Available for any technology stack</li>
 </ul>
 
-<!-- 
-Why do I need the Data Science Standards?
-Table of Contents
--->
-
-Data science projects require structure.  In essence, you are solving data problems by applying the scientific method.  The following guidelines have been refined with over 2,000 data science students, and is a continuous iteration for building capstone projects for your data science or data engineering portfolio.  If you would like to contribute to the material, you are welcome to share across your considerations, and offer these guidelines with attribution to your colleagues as well.
-
-These guidelines are focused for the Python developer ecosystem.  If you are interested in additional resources, consider some of the following links to explore such as the [distinctions between Python and R](https://www.quora.com/Whats-the-difference-between-machine-learning-in-Python-and-R).  There is a broad scope of resources to learn in Python including these [cheatsheets](https://github.com/chrisallenlane/cheat/tree/master/cheat/cheatsheets) for common integrations with the Python language.  I am confident that with these resources below, your journey will be fruitful for your learning and career.
-
-Other languages: The world of Data Science is rich with algorithms, and multiple languages can support your learning journey.  From Python to C++, you can learn more about the popularity of programming languages with the [Tiobe Index](https://www.tiobe.com/tiobe-index/).
-
-### Part One: Project Proposal Requirements:
-
-Data Science problems are **business problems**.
-
-The field of Big Data has transformed Data Modeling and Data Analytics into Data Science and Data Engineering careers.
-
-One way to approach formulating a question is through goal-setting via the SMART Goals Framework:
-
-1. Specific: The data set and key variables are clearly defined.
-2. Measurable: The type of analysis and major assumptions are articulated.
-3. Attainable: The question you are asking is feasible for your data set and not likely to be biased.
-4. Reproducible: Another person (or future you) can read and understand exactly how your analysis is 5. performed.
-6. Time-bound: You clearly state the time period and population to which this analysis pertains.
-
-What Are Some Common Questions Asked in Data Science?
-Machine learning more or less asks the following questions:
-
-Does X predict Y? (Where X is a set of data and y is an outcome.)
-- Are there any distinct groups in our data?
-- What are the key components of our data?
-- Is one of our observations “weird”?
-
-From a business perspective, we can ask:
-- What is the likelihood that a customer will buy this product?
-- Is this a good or bad review?
-- How much demand will there be for my service tomorrow?
-- Is this the cheapest way to deliver my goods?
-- Is there a better way to segment my marketing strategies?
-- What groups of products are customers purchasing together?
-- Can we automate this simple yes/no decision?
-
-*Note: This list may seem limited, but we rewrite most questions to fit this form.*
-
-**Steps in the Data Science Workflow:**
-1. Frame: Develop a hypothesis-driven approach to your analysis.
-2. Prepare: Select, import, explore, and clean your data.
-3. Analyze: Structure, visualize, and complete your analysis.
-4. Interpret: Derive recommendations and business decisions from your data.
-5. Communicate: Present (edited) insights from your data to different audiences.
-
-Student Instructions:
-1. Brainstorm 5 business problems that you would like to better understand and solve with data science.  
-2. Using the above frameworks for SMART and the Data Science Workflow, include these steps in your Project Proposal.
-
-Reading Material:
+Foundational Literature:
 1. [How to ask Data Science questions](https://towardsdatascience.com/how-to-ask-questions-data-science-can-solve-e073d6a06236)
 2. [Asking insightful questions](https://amplitude.com/blog/2015/07/01/question-the-data-how-to-ask-the-right-questions-to-get-actionable-insights)
 
-> After you have identified the project you will work on, then create a markdown (.md) file on Github using the same structure more in-depth, such as an Abstract/Thesis for your project (ideally 300-600 words).  [This is a markdown reference guide.](https://youtu.be/V0fZkWDkPLA)
+## Data Science Project Deliverables:
+1. Part 1: Project Proposal Criteria - Prepare an Abstract as both a Document and a PowerPoint (Start with 3 to 6 project ideas)
+2. Part 2: Perform Exploratory Data Analysis, Visualizations, and Feature Engineering
+3. Part 3: Perform Machine Learning, Performance Metrics, and Deployment for your project 
+4. Part 4: Present your project as a Presentation to your business stakeholders
 
-## Project Proposal Criteria:
+### Part 1: Project Proposal Criteria:
 > _Please prepare your project proposal as a sharable document, and a PowerPoint/Google Slides presentation_
 1. Project Title
 - What is your Project Theme?
 - What is an Abstract - 1 paragraph Executive Summary of your Solution?
 2. Problem Statement & Business Case
 - What is the technical problem you are solving?
-- What is the applied business case for this problem?> 3. Data Science Workflow 
+- What is the applied business case for this problem? 
+  - Business perspective (I.e., Likelihood, sentiment, demand, price, market strategy, groups, automation)
+3. Data Science Workflow 
 - What Null/Alternative Hypothesis are you testing against?
+  - Does X Predict Y? (I.e., Distinct groups, key components, outliers)
+- What is the response that is important for you to measure?
+- What assumptions are important for you to assess and to benchmark?
 - What solutions would you like to deliver against?
 - What benchmarks are you looking to automate?
 - What alternative questions would you like to explore and provide solutions?
-- What analytics and insights would you like to discover from your data? 
-- What types of graphics or machine learnings would you like to discover?
+- What analytics and insights would you like to discover from your data? - What types of graphics or machine learnings would you like to discover?
 - What is the business case for your project? 
 - How will your solution help generate revenue, reduce costs, or impact another Key Performance Indicator or Objective Key Result?
 - Who will be impacted (Executive Stakeholders/Sponsors) by your solution? Who is your ideal client/customer?
-3. Data Collection
+4. Data Collection
 - What raw datasets will you extract for machine learning?
 - Is the data from open-source, paid crowdsourcing, internal?
 - What is the structures, file types, and quality of the data?
 - How will you collect the data?
 - Of your known data, what is the current data dictionaries that exist, or that you can further describe? (You can create these data dictionaries in a spreadsheet, markdown table, or listed)
-4. Data Processing, Preparation, & Feature Engineering
+5. Data Processing, Preparation, & Feature Engineering
 - What techniques will you use to improve your data quality?
 - How will you handle missing data and outliers?
 - What calculations/formulas would you like to create, that may not yet exist?
-5. Machine Learning: Model Selection
+6. Machine Learning: Model Selection
 - Which model architecture(s) will you use to solve your problem?
 - How will you validate the model performance?
-6. Model Persistence: Deployment, Training, & Data Pipelines
+7. Model Persistence: Deployment, Training, & Data Pipelines
 - How would your results operate LIVE in a production environment?
 - What technology stack, what integrations, and which Engineers would you cooperate?
 - Where will you share your results internally or externally to stakeholders through Marketing, Implementation and Deployments?
 - How will you validate your machine learnings with a timeline from development to production?  How will you generate more data to train?
 
--------------------------------------------------------------------------------------------------------------------
-## Capstone Deliverables:
-1. Submit the project proposal as a push to your Github directory with this data science project
-2. The project proposal should be submit as a Markdown file ending in .md extension.
-3. You can include any types of markdown, LaTeX, text, and images that you find relevant for your project proposal or research abstract.
-4. This presentation should be simple, that it can be read and understood by non-technical individuals or business stakeholders.
+<hr size="3">
 
 ### Part Two: Exploratory Data Analysis Guidelines
 Exploratory data analysis is the first major step in a capstone project for your portfolio.  From collecting and cleaning data, to analyzing and displaying the data, your data wrangling or feature engineering journey will prepare your project for a successful machine learning implementation.
@@ -133,7 +82,7 @@ Exploratory data analysis is the first major step in a capstone project for your
 > 13. Add commenting and markdown throughout the jupyter notebook to explain the interpretation of your results or to comment on code that may not be human readable, and help you recall for you what you are referencing. (Markdown references: [Latex Cheatsheet](https://www.nyu.edu/projects/beber/files/Chang_LaTeX_sheet.pdf), [Markdown for Jupyter Notebooks](https://medium.com/ibm-data-science-experience/markdown-for-jupyter-notebooks-cheatsheet-386c05aeebed), [LaTeX in Notebooks](https://stackoverflow.com/questions/13208286/how-to-write-latex-in-ipython-notebook), [Markdown Intro](https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Working%20With%20Markdown%20Cells.html), [CommonMark](https://commonmark.org/), 
 > 14. To create a markdown .md milestone report that shows and explains the results of what you have accomplished to date in this part of your course project. Consider also creating a .pdf or .pptx to display initial results, aha moments, or findings that would be novel or fascinating for your final presentations. 
 
-### Part Three: Machine Learning Guidelines  
+### Part 3: Machine Learning Guidelines  
 > 0. Create a brand new Jupyter notebook, where you run the latest DataFrame or .csv files(s) that you have previously saved from your exploratory data analysis notebook. 
 > 1. After you have completed the exploratory data analysis section of your project, start revisiting your hypothesis(es) on ideas that you would like to either predict (regression) or classify (classifier).  > 2. Have you identified a specific column or multiple columns that could be treated as response or target variables to predict/classify?
 > 3. If not, consider performing additional exploratory analysis that helps you pinpoint a potential working hypothesis to test results against. You could consider [clustering techniques](http://scikit-learn.org/stable/modules/clustering.html) as an addition to exploratory data analysis as a preparation for machine learning, including [TSNE Clustering](http://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html)
@@ -153,8 +102,8 @@ Exploratory data analysis is the first major step in a capstone project for your
 > 17.  For your project, your presentation will showcase the best 3-5 models.  However, it is fine if you have inefficient models that do not perform well, for practice, so keep these in your main modeling Jupyter notebook as a reference. 
 > 18. If you chose to work with .py scripts, here is a [method to rename these files](https://stackoverflow.com/questions/2759067/rename-multiple-files-in-a-directory-in-python/24954254).
 
-### Part Four: Presentation Design
-#### Presentation Skeleton for Data Science, Solution Engineering & Customer Experience
+### Part 4: Presentation Design
+> _Please prepare your Presentation with this Presentation Skeleton for for Data Science, Solution Engineering & Customer Experience_
 
 - Title Page:
   - Project Title 
