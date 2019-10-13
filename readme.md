@@ -64,12 +64,26 @@ Foundational Literature:
 <hr size="3">
 
 ### Part Two: Exploratory Data Analysis Guidelines
-Exploratory data analysis is the first major step in a capstone project for your portfolio.  From collecting and cleaning data, to analyzing and displaying the data, your data wrangling or feature engineering journey will prepare your project for a successful machine learning implementation.
+The Exploratory Data Analysis is a significant progression from Defining a Data Science Problem to determine the specific characteristics needed to solve the problem.  From Data Wrangling, Data Munging, Pre-processing, Pipelines, Data Visualization, and Data Analytics, all these areas are essential for effective Exploratory Data Analysis.
  
-> 0. Creating a capstone project can result in stress levels on your machine that cause slow processing power. If you are interested to measure your results consider [timing processing](http://pynash.org/2013/03/06/timing-and-profiling/).  In order to accelerate your prototyping during the development phase, you can consider a cloud solution offering such as [Google Colab](https://colab.research.google.com/) and [importing data into Google Colab](https://stackoverflow.com/questions/46986398/import-data-into-google-colaboratory), [Microsoft Notebooks](https://notebooks.azure.com/) and [IBM Notebooks](https://dataplatform.cloud.ibm.com/docs/content/analyze-data/notebooks-parent.html).  If you are looking for more advanced infrastructure, consider providers such as [Amazon Web Services](https://aws.amazon.com/), [Microsoft Azure](http://azure.microsoft.com/), [Google Cloud Platform](https://cloud.google.com/gcp), and [IBM Watson Data Studio](https://www.ibm.com/cloud/watson-studio).  If you are looking for instant container solutions for data science projects, consider [Crestle](https://www.crestle.com/) and [Paperspace](https://www.paperspace.com/)
-> 1. To start, please be sure to create Notebooks that you code your data analysis in.  You will want to work in a Python 3 environment. You can also [customize your Jupyter environment](https://github.com/Jupyter-contrib/jupyter_nbextensions_configurator) including [adding themes](https://github.com/dunovank/jupyter-themes). If you have legacy python 2 code, a [converter](https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/nbextensions/code_prettify/README_2to3.html) does exist.  These notebooks should be through the Jupyter framework, which support .ipynb (iPython Notebooks) and .md (Markdown) files, as well as interactivity between both, which can be displayed effectively through a Github environment or [Binder](https://mybinder.org/). If you would like, you can do additional editing through [VSCode](https://vscodecandothat.com/) and even set it as your [default editor](https://stackoverflow.com/questions/30024353/how-to-use-visual-studio-code-as-default-editor-for-git).  Practing [Jupyter shortcuts](https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/) may facilitate your efficiency with the Notebook environment.
-> 2. Import your data or [multiple data files](https://stackoverflow.com/questions/20906474/import-multiple-csv-files-into-pandas-and-concatenate-into-one-dataframe) and to save as dataframes, and convert [XML to DataFrames](http://www.austintaylor.io/lxml/python/pandas/xml/dataframe/2016/07/08/convert-xml-to-pandas-dataframe/) when needed.  And [unzip files](https://chrisjean.com/unzip-multiple-files-from-linux-command-line/) easily.  If you need to scrape data from PDFs consider [Camelot](https://camelot-py.readthedocs.io/en/master/). If you have experience with R, consider the [RPy2 package](https://rpy2.readthedocs.io/en/version_2.8.x/index.html).
-> 3. Examine your data, columns and rows and rename and adjust indexing and encoding as appropriate. This [Pandas Cheatsheet](https://github.com/pandas-dev/pandas/blob/master/doc/cheatsheet/Pandas_Cheat_Sheet.pdf) could be resourcesful for you.  Did you also know that Python has excellent [built-in functions](https://docs.python.org/2/library/functions.html).
+> **0. Compute and Storage Considerations:** 
+Projects that scale require more compute, faster computer, and more storage. In the market, many solutions from many providers exist.  If you need Cloud Compute and Storage consider the following options:
+>> [Paperspace](www.paperspace.com) - For under $10 per month, basic cloud compute and storage is available, with automation, Docker containers, and pre-installed Python packages in a Jupyter notebook.
+>> [Google Colab](https://colab.research.google.com/) - Cloud Notebooks with the potential to accelerate with GPUs and TPUs.  Data can be accessed and stored from Google Drive.
+>> [Microsoft Notebooks](https://notebooks.azure.com/) - Cloud Notebooks and data on Azure.
+>> Custom environments: [Amazon Web Services](https://aws.amazon.com/) with EMR, [Microsoft Azure](http://azure.microsoft.com/), [Google Cloud Platform](https://cloud.google.com/gcp), and [IBM Watson Data Studio](https://www.ibm.com/cloud/watson-studio).
+>> Note: Today there are dozens of other platforms that can help in the cloud, including Domino Data Lab, Anaconda Cloud, Crestle, Spell.ai, Comet.ml, among others.
+
+> **1. Developer Environment** 
+>> Pick a consistent Framework (Python or R) that can be used for your end-to-end project workflow. 
+>> Consider a consistent environment for your project development ([Jupyter](https://jupyter.org/), [PyCharm](https://www.jetbrains.com/pycharm/), or [Visual Studio Code](https://code.visualstudio.com/) which support code, Markdown Text, and LaTeX.
+
+> **2. Data Loading**
+>> Import your Data in-memory from SQL Databases, APIs, or Files with [Pandas IO](https://pandas.pydata.org/pandas-docs/stable/user_guide/io.html) and [Camelot PDFs](https://camelot-py.readthedocs.io/en/master/) 
+
+> **3. Data Exploration**
+>> Examine your data, columns and rows and rename and adjust indexing and encoding as appropriate. This [Pandas Cheatsheet](https://github.com/pandas-dev/pandas/blob/master/doc/cheatsheet/Pandas_Cheat_Sheet.pdf) could be resourcesful for you.  Did you also know that Python has excellent [built-in functions](https://docs.python.org/2/library/functions.html).
+
 > 4. Clean null and blank values, and consider to drop rows, as well as to manipulate data and adjust data types as appropriate, including [dates](https://jakevdp.github.io/PythonDataScienceHandbook/03.11-working-with-time-series.html) and [time](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DatetimeIndex.html), or setting appropriate indices. Adjusting specific values and replacing strings and characters for the data wrangling process.  
 > 5. Explore analysis with graphing and visualizations.  Overall you can view many types of charts [here](https://www.machinelearningplus.com/plots/top-50-matplotlib-visualizations-the-master-plots-python/?utm_campaign=Data_Elixir&utm_medium=email&utm_source=Data_Elixir_212).  [Here](https://www.anaconda.com/blog/developer-blog/python-data-visualization-2018-why-so-many-libraries/) are all the known packages.  Further, with matplotlib and seaborn and alternative visualization packages ([Plot.ly and Dash](https://plot.ly/products/dash/), [Bokeh](https://bokeh.pydata.org/en/latest/), [Altair](https://altair-viz.github.io/), [Vincent](https://vincent.readthedocs.io/en/latest/), [Mlpd3](http://mpld3.github.io/index.html), [Folium](https://github.com/python-visualization/folium), and [pygal](http://pygal.org/en/stable/)).  It is important to create [reproducible graphs](http://www.jesshamrick.com/2016/04/13/reproducible-plots/). [Sci-kit plot](https://github.com/reiinakano/scikit-plot) may help.  Additional Seaborn resources may be helpful: ([Cat graphs](https://seaborn.pydata.org/generated/seaborn.catplot.html), [Seaborn Color Palettes](https://seaborn.pydata.org/tutorial/color_palettes.html), [Matplotlib Color Maps](https://matplotlib.org/examples/color/colormaps_reference.html) and [more Seaborn examples](https://seaborn.pydata.org/examples/)).  You can also explore [advanced Matplotlib capabilities](https://www.safaribooksonline.com/library/view/python-data-science/9781491912126/ch04.html), [legends with Matplotlib](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.legend.html) and [Matplotlib styles](https://tonysyu.github.io/raw_content/matplotlib-style-gallery/gallery.html). [Adobe color](https://color.adobe.com/explore/?filter=most-popular&time=month) also offers fantastic color selections and [Lyft Colorbox](https://www.colorbox.io/) provides accessible color options. Numerous [magic methods](https://ipython.readthedocs.io/en/stable/interactive/magics.html) exist to allow graphs to display and to offer [customized magical functions](https://github.com/RafeKettler/magicmethods/blob/master/magicmethods.pdf).
 > 6. Perform additional analysis by creating new columns for calculations, including aggregator functions, counts and groupbys. [Scipy](https://docs.scipy.org/doc/scipy/reference/tutorial/stats.html) could be helpful for statistical calculations as well.  Consider what [distributions](http://www.math.wm.edu/~leemis/chart/UDR/UDR.html) you might be working with and [all the possibilities](https://en.wikipedia.org/wiki/List_of_probability_distributions).  Consider [GIS in Python](https://automating-gis-processes.github.io/CSC18/lessons/L1/Intro-Python-GIS.html) for geospatial data.
@@ -120,18 +134,18 @@ Exploratory data analysis is the first major step in a capstone project for your
 - Data Analysis Slide(s):
   - Techniques, Software stack, platforms used 
   - Data Dictionary, Feature Engineering
-  - Benchmarked metrics to discover
-  - Visualizations of analytics with business context 
+  - Benchmarked or baseline metrics to discover
+  - Visualizations of analytics with business context (Maximum 2 visualizations per slide)
 - Machine Learning Slide(s):
   - Metrics and Scoring with analytics with best scoring models and business context 
-  - Describe how metrics are scored to baseline 
+  - Describe how metrics are scored to baseline (Model Persistence)
 - Deployment:
-  - How Machine Learning solution will be Deployed
+  - How Machine Learning solution will be Deployed in Production
 - Conclusion Slide:
   - Recommendations and Results with business context
   - Future Research and Analysis 
 - Next Steps slide:
-  - Contact, Github URL, Presentation Link, and Call to Action 
+  - Contact, Github/Gitlab URL, Presentation Link, and Call to Action 
  Appendix:
   - Works Cited and Media Resources 
 
@@ -144,10 +158,10 @@ Exploratory data analysis is the first major step in a capstone project for your
 <li> Maximum of 20 slides.</li>
 <li> Can be interpreted if sent as a cold e-mail without you presenting your report.</li>
 <li> Appendix Slide for Works Cited, Bibliography, and Links must be included.</li>
-<li> Presentation delivery to not exceed 8 minutes </li>
+<li> Presentation delivery to not exceed 7 minutes </li>
 <li> Presentation delivery to be for non-technical stakeholder (Also known as "Teach me like I am 5")</li>
-<li> Presentation Delivery on Google Hangouts, Skype, or Zoom </li>
-<li> Be prepared for a Q&A sesssion for 3 to 5 minutes</li>
+<li> Presentation Delivery In-Person or Zoom or Skype </li>
+<li> Be prepared for a Q&A sesssion for 3 minutes</li>
 </ol>
 
 #### Additional Notes
