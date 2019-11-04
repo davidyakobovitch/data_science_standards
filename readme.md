@@ -20,9 +20,10 @@ Foundational Literature:
 2. Part 2: Perform Exploratory Data Analysis, Visualizations, and Feature Engineering
 3. Part 3: Perform Machine Learning, Performance Metrics, and Deployment for your project 
 4. Part 4: Present your project as a Presentation to your business stakeholders
+5. Part 5: Submit your project for your Advisors and business stakeholders
 
-### Part 1: Project Proposal Criteria:
-> _Please prepare your project proposal as a sharable document, and a PowerPoint/Google Slides presentation_
+### Part 1: Project Proposal Guidelines:
+> _Please prepare your project proposal as a sharable document, and a PowerPoint presentation_
 1. Project Title
 - What is your Project Theme?
 - What is an Abstract - 1 paragraph Executive Summary of your Solution?
@@ -63,110 +64,114 @@ Foundational Literature:
 
 <hr size="3">
 
-### Part Two: Exploratory Data Analysis Guidelines
+### Part 2: Exploratory Data Analysis Guidelines:
 The Exploratory Data Analysis is a significant progression from Defining a Data Science Problem to determine the specific characteristics needed to solve the problem.  From Data Wrangling, Data Munging, Pre-processing, Pipelines, Data Visualization, and Data Analytics, all these areas are essential for effective Exploratory Data Analysis.
  
-> **0. Compute and Storage Considerations:** 
-Projects that scale require more compute, faster computer, and more storage. In the market, many solutions from many providers exist.  If you need Cloud Compute and Storage consider the following options:
->> [Paperspace](www.paperspace.com) - For under $10 per month, basic cloud compute and storage is available, with automation, Docker containers, and pre-installed Python packages in a Jupyter notebook.
->> [Google Colab](https://colab.research.google.com/) - Cloud Notebooks with the potential to accelerate with GPUs and TPUs.  Data can be accessed and stored from Google Drive.
->> [Microsoft Notebooks](https://notebooks.azure.com/) - Cloud Notebooks and data on Azure.
->> Custom environments: [Amazon Web Services](https://aws.amazon.com/) with EMR, [Microsoft Azure](http://azure.microsoft.com/), [Google Cloud Platform](https://cloud.google.com/gcp), and [IBM Watson Data Studio](https://www.ibm.com/cloud/watson-studio).
->> Note: Today there are dozens of other platforms that can help in the cloud, including Domino Data Lab, Anaconda Cloud, Crestle, Spell.ai, Comet.ml, among others.
+> **1. Compute and Storage Considerations:** 
+_Projects that scale require more compute, faster computer, and more storage. In the market, many solutions from many providers exist.  If you need Cloud Compute and Storage consider the following options:_
+>> - [Paperspace](www.paperspace.com) - For under $10 per month, basic cloud compute and storage is available, with automation, Docker containers, and pre-installed Python packages in a Jupyter notebook.
+>> - [Google Colab](https://colab.research.google.com/) - Cloud Notebooks with the potential to accelerate with GPUs and TPUs.  Data can be accessed and stored from Google Drive.
+>> - [Microsoft Notebooks](https://notebooks.azure.com/) - Cloud Notebooks and data on Azure.
+>> - Custom environments: [Amazon Web Services](https://aws.amazon.com/) with EMR, [Microsoft Azure](http://azure.microsoft.com/), [Google Cloud Platform](https://cloud.google.com/gcp), and [IBM Watson Data Studio](https://www.ibm.com/cloud/watson-studio).
+>> - Note: Today there are dozens of other platforms that can help in the cloud, including Domino Data Lab, Anaconda Cloud, Crestle, Spell.ai, Comet.ml, among others.
 
-> **1. Developer Environment** 
->> Pick a consistent Framework (Python or R) that can be used for your end-to-end project workflow. 
->> Consider a consistent environment for your project development ([Jupyter](https://jupyter.org/), [PyCharm](https://www.jetbrains.com/pycharm/), or [Visual Studio Code](https://code.visualstudio.com/) which support code, Markdown Text, and LaTeX.
+> **2. Developer Environment:** 
+>> - Pick a consistent Framework (Python or R) that can be used for your end-to-end project workflow. 
+>> - Consider a consistent environment for your project development ([Jupyter](https://jupyter.org/), [PyCharm](https://www.jetbrains.com/pycharm/), or [Visual Studio Code](https://code.visualstudio.com/) which support code, Markdown Text, and LaTeX.
 
-> **2. Data Loading**
->> Import your Data in-memory from SQL Databases, APIs, or Files with [Pandas IO](https://pandas.pydata.org/pandas-docs/stable/user_guide/io.html) and [Camelot PDFs](https://camelot-py.readthedocs.io/en/master/) 
+> **3. Data Collection:**
+>> - Import your Data in-memory from SQL Databases, [APIs](http://www.programmableweb.com), or Files with [Pandas IO](https://pandas.pydata.org/pandas-docs/stable/user_guide/io.html) and [Camelot PDFs](https://camelot-py.readthedocs.io/en/master/) or BeautifulSoup for web scraping
 
-> **3. Data Exploration**
->> Examine your data, columns and rows and rename and adjust indexing and encoding as appropriate. This [Pandas Cheatsheet](https://github.com/pandas-dev/pandas/blob/master/doc/cheatsheet/Pandas_Cheat_Sheet.pdf) could be resourcesful for you.  Did you also know that Python has excellent [built-in functions](https://docs.python.org/2/library/functions.html).
+> **4. Data Exploration:**
+>> - Examine your data, columns and rows and rename and adjust indexing and encoding as appropriate. This [Pandas Cheatsheet](https://github.com/pandas-dev/pandas/blob/master/doc/cheatsheet/Pandas_Cheat_Sheet.pdf) could be resourcesful for you.  Did you also know that Python has excellent [built-in functions](https://docs.python.org/2/library/functions.html).
+>> - Explore null, NaN, None, and missing data with python packages such as [missingno](https://github.com/ResidentMario/missingno) and [pandas-profiling](https://github.com/pandas-profiling/pandas-profiling).  Repair this data either by dropping or imputing values (I.e., mean, median, ffill, bfill, knn calculation)
+>> - Indexing: Change indices and datatypes as appropriate for your dataset. (I.e., string, category, integer, float, datetime, timedelta). The datetime module will assist for datetime objects.
+>> - Reduce memory constraints: Consider changing datatypes from Int64/Float64 to Int32/16 if memory performance is important for your compute requirements.
+>> - Forensically Repair Data: The [regex package](https://bitbucket.org/mrabarnett/mrab-regex/src/default/), or alternatively built-in functions such as .replace and .apply could be used to fix data issues I.e., ($,;|\n\t, etc.)
+>> - Repair imbalanced datasets with upsampling or downsampling with imblearn or scikit-learn
+>> - Join, Concatenate and merge datasets with Pandas, or SQL modules
+>> - Generate statistics for columns, distributions, pivots, and aggregations with Numpy, Scipy, and Pandas modules.
+>> - Generate custom calculations, including correlation analysis.
+>> - Repair attribute columns with [Pre-processing](http://scikit-learn.org/stable/modules/classes.html#module-sklearn.preprocessing), [Pipeline](http://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline), and parameter tuning
+>> - List hypothesis for response variable to predict, classify, cluster, or reinforce with Machine Learning.
 
-> 4. Clean null and blank values, and consider to drop rows, as well as to manipulate data and adjust data types as appropriate, including [dates](https://jakevdp.github.io/PythonDataScienceHandbook/03.11-working-with-time-series.html) and [time](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DatetimeIndex.html), or setting appropriate indices. Adjusting specific values and replacing strings and characters for the data wrangling process.  
-> 5. Explore analysis with graphing and visualizations.  Overall you can view many types of charts [here](https://www.machinelearningplus.com/plots/top-50-matplotlib-visualizations-the-master-plots-python/?utm_campaign=Data_Elixir&utm_medium=email&utm_source=Data_Elixir_212).  [Here](https://www.anaconda.com/blog/developer-blog/python-data-visualization-2018-why-so-many-libraries/) are all the known packages.  Further, with matplotlib and seaborn and alternative visualization packages ([Plot.ly and Dash](https://plot.ly/products/dash/), [Bokeh](https://bokeh.pydata.org/en/latest/), [Altair](https://altair-viz.github.io/), [Vincent](https://vincent.readthedocs.io/en/latest/), [Mlpd3](http://mpld3.github.io/index.html), [Folium](https://github.com/python-visualization/folium), and [pygal](http://pygal.org/en/stable/)).  It is important to create [reproducible graphs](http://www.jesshamrick.com/2016/04/13/reproducible-plots/). [Sci-kit plot](https://github.com/reiinakano/scikit-plot) may help.  Additional Seaborn resources may be helpful: ([Cat graphs](https://seaborn.pydata.org/generated/seaborn.catplot.html), [Seaborn Color Palettes](https://seaborn.pydata.org/tutorial/color_palettes.html), [Matplotlib Color Maps](https://matplotlib.org/examples/color/colormaps_reference.html) and [more Seaborn examples](https://seaborn.pydata.org/examples/)).  You can also explore [advanced Matplotlib capabilities](https://www.safaribooksonline.com/library/view/python-data-science/9781491912126/ch04.html), [legends with Matplotlib](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.legend.html) and [Matplotlib styles](https://tonysyu.github.io/raw_content/matplotlib-style-gallery/gallery.html). [Adobe color](https://color.adobe.com/explore/?filter=most-popular&time=month) also offers fantastic color selections and [Lyft Colorbox](https://www.colorbox.io/) provides accessible color options. Numerous [magic methods](https://ipython.readthedocs.io/en/stable/interactive/magics.html) exist to allow graphs to display and to offer [customized magical functions](https://github.com/RafeKettler/magicmethods/blob/master/magicmethods.pdf).
-> 6. Perform additional analysis by creating new columns for calculations, including aggregator functions, counts and groupbys. [Scipy](https://docs.scipy.org/doc/scipy/reference/tutorial/stats.html) could be helpful for statistical calculations as well.  Consider what [distributions](http://www.math.wm.edu/~leemis/chart/UDR/UDR.html) you might be working with and [all the possibilities](https://en.wikipedia.org/wiki/List_of_probability_distributions).  Consider [GIS in Python](https://automating-gis-processes.github.io/CSC18/lessons/L1/Intro-Python-GIS.html) for geospatial data.
-> 7. Encode categorical variables with a variety of techniques through logical conditions, mapping, applying, where clauses, dummy variables, and one hot encoding. Here is [one method to encodage categorical variables](http://benalexkeen.com/mapping-categorical-data-in-pandas/) in Pandas.  When displaying results, consider to [format](https://pyformat.info/) them as well including as [floats](https://stackoverflow.com/questions/6149006/display-a-float-with-two-decimal-places-in-python/6149115).
-> 8. Re-run calculations, including crosstabs or pivots, and new graphs to see results 
-> 9. Create correlation matrices, [pairplots](https://seaborn.pydata.org/generated/seaborn.pairplot.html), scatterplot matrices, and [heatmaps](https://seaborn.pydata.org/generated/seaborn.heatmap.html) to determine which attributes should be features for your models and which attributes should not.  Design your visualizations with themes such as [pallettes](https://seaborn.pydata.org/tutorial/color_palettes.html). 
-> 10. Identify the response variables(s) that you would want to predict/classify/interpret with data science 
-> 11. Perform additional feature engineering as necessary, including Min/Max, Normalizaton, Scaling, and additional Pipeline changes that may be beneficial or helpful when you run machine learning.  If you have trouble installing packages, this [environmental variable resource](https://stackoverflow.com/questions/31615322/zsh-conda-pip-installs-command-not-found) may be helpful.
-> 12. Merge or concatenate datasets with [Pandas merging](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.merge.html), or SQL methods (I.e., [Learning SQL](https://www.quora.com/What-some-of-the-websites-where-I-can-practice-Advance-SQL), [SQL Joins](http://sqlhints.com/tag/cross-join/), [Joins #2](https://stackoverflow.com/questions/38549/what-is-the-difference-between-inner-join-and-outer-join), [Joins #3](https://stackoverflow.com/questions/17759687/cross-join-vs-inner-join-in-sql-server-2008), [SQL Tutorial](https://community.modeanalytics.com/sql/tutorial/introduction-to-sql/), and [Saving Queries](https://stackoverflow.com/questions/31769736/saving-sql-queries-as-sql-text-file) if you have not already, based on common keys or unique items for more in-depth analysis.  Additional SQL resources include the [SQL Cookbook](https://www.amazon.com/SQL-Cookbook-Solutions-Techniques-Developers/dp/0596009763/ref=sr_1_3?ie=UTF8&qid=1548602827&sr=8-3&keywords=sql+cookbook) and [Seven Databases](https://www.amazon.com/Seven-Databases-Weeks-Modern-Movement-ebook/dp/B07CYLX6FD/ref=sr_1_1?ie=UTF8&qid=1548602862&sr=8-1&keywords=seven+database+design).
-> 13. Add commenting and markdown throughout the jupyter notebook to explain the interpretation of your results or to comment on code that may not be human readable, and help you recall for you what you are referencing. (Markdown references: [Latex Cheatsheet](https://www.nyu.edu/projects/beber/files/Chang_LaTeX_sheet.pdf), [Markdown for Jupyter Notebooks](https://medium.com/ibm-data-science-experience/markdown-for-jupyter-notebooks-cheatsheet-386c05aeebed), [LaTeX in Notebooks](https://stackoverflow.com/questions/13208286/how-to-write-latex-in-ipython-notebook), [Markdown Intro](https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Working%20With%20Markdown%20Cells.html), [CommonMark](https://commonmark.org/), 
-> 14. To create a markdown .md milestone report that shows and explains the results of what you have accomplished to date in this part of your course project. Consider also creating a .pdf or .pptx to display initial results, aha moments, or findings that would be novel or fascinating for your final presentations. 
+> **5. Data Visualizations:**
+>> - Visualizations can include 100+ types of graphs, available in a sample of the following modules: Turtle, Matplotlib, Seaborn, [Plotly/Dash](https://plot.ly/products/dash/), [Bokeh](https://bokeh.pydata.org/en/latest/), [Altair](https://altair-viz.github.io/), [Vincent](https://vincent.readthedocs.io/en/latest/), [Mlpd3](http://mpld3.github.io/index.html), [Folium](https://github.com/python-visualization/folium), [pygal](http://pygal.org/en/stable/)), [Sci-kit plot](https://github.com/reiinakano/scikit-plot) and Yellow Brick.
+>> - Design considerations: [Color Maps](https://matplotlib.org/examples/color/colormaps_reference.html), [Styles](https://tonysyu.github.io/raw_content/matplotlib-style-gallery/gallery.html), and [Palettes](https://seaborn.pydata.org/tutorial/color_palettes.html). Custom colors can be chosen from [Adobe color](https://color.adobe.com/explore/?filter=most-popular&time=month) and [Lyft Colorbox](https://www.colorbox.io/).
+>> - All graphs/plots must be labeled, formatted and [reproducible](http://www.jesshamrick.com/2016/04/13/reproducible-plots/). All graphs must be saved as PNG files in an Images folder, and saved as an overall PDF for project submission.
 
-### Part 3: Machine Learning Guidelines  
-> 0. Create a brand new Jupyter notebook, where you run the latest DataFrame or .csv files(s) that you have previously saved from your exploratory data analysis notebook. 
-> 1. After you have completed the exploratory data analysis section of your project, start revisiting your hypothesis(es) on ideas that you would like to either predict (regression) or classify (classifier).  > 2. Have you identified a specific column or multiple columns that could be treated as response or target variables to predict/classify?
-> 3. If not, consider performing additional exploratory analysis that helps you pinpoint a potential working hypothesis to test results against. You could consider [clustering techniques](http://scikit-learn.org/stable/modules/clustering.html) as an addition to exploratory data analysis as a preparation for machine learning, including [TSNE Clustering](http://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html)
-> 4. Consider for your machine learning what parts of your feature engineering have been completed, or need to additionally be completed through [Pre-processing](http://scikit-learn.org/stable/modules/classes.html#module-sklearn.preprocessing) and its [use cases](http://scikit-learn.org/stable/modules/preprocessing.html) or [Pipeline](http://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline) operations such as [Normalize](http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.Normalizer.html), Scaler, Min/Max, etc. 
-> 5. As a result of correlation matrices, heatmaps, and visualizations, consider which features may be relevant to support the model that you are building. 
-> 6. Consider what machine learning models through [SkLearn](http://scikit-learn.org/stable/_downloads/scikit-learn-docs.pdf) and their [Github Repo](https://github.com/scikit-learn/scikit-learn) or [StatsModels](https://www.statsmodels.org/stable/index.html) could be effective for your newly discovered [hypothesis testing](http://hamelg.blogspot.com/2015/11/python-for-data-analysis-part-24.html?view=classic) (linear regressions (I.e., [Lowess Regression](http://www.statsmodels.org/devel/generated/statsmodels.nonparametric.smoothers_lowess.lowess.html), [Logistic regression](http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html) and [multi-class models](http://scikit-learn.org/stable/modules/multiclass.html), KNearest Neighbors, [Clustering](http://scikit-learn.org/stable/modules/clustering.html), [Decision Trees](http://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html) and how to [export graphviz](http://scikit-learn.org/stable/modules/generated/sklearn.tree.export_graphviz.html), including [Bagging Regressor](http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.BaggingRegressor.html) or the [Bagging Classifier](http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.BaggingClassifier.html), and [feature selection for Ensembles](http://scikit-learn.org/stable/auto_examples/ensemble/plot_feature_transformation.html#sphx-glr-auto-examples-ensemble-plot-feature-transformation-py), [Random Forest](https://victorzhou.com/blog/intro-to-random-forests/) including [Tuning RF](https://towardsdatascience.com/hyperparameter-tuning-the-random-forest-in-python-using-scikit-learn-28d2aa77dd74), Naive Bayes, Natural Language Processing ([Word2Vec](https://github.com/davidyakobovitch/word2vec-translation) and [understanding Word2Vec](https://jalammar.github.io/illustrated-word2vec/), [Spacy](https://github.com/davidyakobovitch/spaCy-tutorial) and [Spacy Models](https://spacy.io/usage/models), and [Topic Modeling](https://github.com/davidyakobovitch/topic-modeling)) Time Series Analysis (I.e., [Time Series 1](https://machinelearningmastery.com/convert-time-series-supervised-learning-problem-python/) and [Time Series 2](https://machinelearningmastery.com/time-series-forecasting-supervised-learning/), [Neural Networks](http://scikit-learn.org/stable/modules/neural_networks_supervised.html), Support Vector Machines and [Model Resistance](http://scikit-learn.org/stable/modules/model_persistence.html), [Stochastic Gradient Descent](http://www.scikit-learn.org/stable/modules/sgd.html), dimensionality reduction with PCA (<a href="http://setosa.io/ev/principal-component-analysis/">demo here</a>) as well as Ensembles such as [GB Classifier](http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.GradientBoostingClassifier.html) and [GB Regressor](http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.GradientBoostingRegressor.html)).  Once you have determined models to consider, be sure to import their packages into Python.
-> 7. Consider what tuning parameters you may want to optimize for your model, including regularization (Lasso, ridge, ElasticNet), and additional parameters relevant to each model.  [Github Code Search](http://jakubdziworski.github.io/tools/2016/08/26/github-code-advances-search-programmers-goldmine.html) could help you as you are adjusting your models.
-> 8.  Be sure to include a train_test_split, and then consider a KFolds or Cross Validations to offer stratified results that limit the interpretation of outliers for your dataset.  If you have imbalanced classes consider [techniques to adjust them](https://elitedatascience.com/imbalanced-classes).
-> 9. If you still have many outliers, consider how to remove them or optimize for them with categories.  How could you adjust your categories, or thresholds to improve performance for what you are testing for your hypothesis? Depending on how your model error performs, you may want to consider to change or adjust other features in your model.  You may want to consider to add or remove features, and measure the feature importance when running models. 
-> 10.  Consider a [Grid Search](http://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html), [Grid Search with Cross Validation Continued](http://scikit-learn.org/stable/auto_examples/model_selection/plot_grid_search_digits.html), or [Random Search](http://scikit-learn.org/stable/modules/generated/sklearn.model_selection.RandomizedSearchCV.html) to better optimize your models. 
-> 11.  Share metrics on each model that is run, such as error and accuracy, confusion matrices which are based off [truth tables](https://en.wikipedia.org/wiki/Truth_table), and [logical conditions](https://en.wikipedia.org/wiki/Sensitivity_and_specificity). They can be displayed through [ROC/AUC](http://scikit-learn.org/stable/auto_examples/model_selection/plot_roc.html) curves as well as [visually](http://scikit-learn.org/stable/auto_examples/model_selection/plot_confusion_matrix.html#sphx-glr-auto-examples-model-selection-plot-confusion-matrix-py). [Scoring your models](http://benalexkeen.com/scoring-classifier-models-using-scikit-learn/) is important for both regression and classification techniques.  Other models have additional metrics, that you can consider to share.  You can set up metrics and running models in defined functions for further automation of your project. 
-> 12. Compare your metrics against the base case or null case for accuracy, which ideally is compared to your majority class, or a median/mean representation for your target/response variable.  How well does your model perform?
-> 13. Provide markdown explaining the interpretation relevant to your business case after running models.  Also, share comments to explain what you are doing, for your interpretation and then reproducibility of your code. 
-> 14.  If you are running Time Series Analysis, you will want to consider additional model capabilities such as rolling and moving averages with the dateTime package and pandas.
-> 15.  If you are working on Natural Language processing, you will want to consider python packages such as [Spacy](https://github.com/davidyakobovitch/spaCy-tutorial), [topic modeling](https://github.com/davidyakobovitch/topic-modeling),  NLTK, TextBlob, and [word2vec](https://github.com/davidyakobovitch/word2vec-translation).
-> 16. If you are scraping additional data, consider python packages such as Selenium and BeautifulSoup4.
-> 17.  For your project, your presentation will showcase the best 3-5 models.  However, it is fine if you have inefficient models that do not perform well, for practice, so keep these in your main modeling Jupyter notebook as a reference. 
-> 18. If you chose to work with .py scripts, here is a [method to rename these files](https://stackoverflow.com/questions/2759067/rename-multiple-files-in-a-directory-in-python/24954254).
+### Part 3: Machine Learning Guidelines:
+> **Scripts & Notebooks:**
+>> - Create Jupyter Notebook or Scripts where DataFrames and data files are called for machine learning pipeline
+>> - Revisit your Working Hypothesis(es) to benchmark or backtest your response prediction/classification/cluster/reinforcement. 
+>> - Select machine learning modules for your data science (I.e., scikit-learn, statsmodels, pytorch, TensorFlow, Fast.AI, XGBoost, LightGBM, sktime, fbprophet, etc.)
+>>> **Note:** _Module versions may require dependencies and may be unstable, and as such, you are recommended to develop and debug in isolated developer environments. (I.e., Conda, Docker, Kubernetes, Cloud instances)_
+>> - Perform feature selection/variable importance as a result of Exploratory Data Analysis, Data Visualizations, Dimensionality Reduction, and Model Tuning
+>> - Select Algorithms for Machine Learning (I.e., Linear Regression(s), Logistic Regression, Trees, Proximity Models, Classifiers, Natural Language Processors - Spacy, Word2Vec, Time Series, Neural Networks, XGBoost, LightGBM, Ensembles, Stacked Models)
+>> - Parameter Tuning - Perform [Grid Search](http://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html) or [Randomized Search](http://scikit-learn.org/stable/modules/generated/sklearn.model_selection.RandomizedSearchCV.html) to optimize parameters for validation, splits, regularization, tuple/dictionary parameters, etc.
+>> - Compare and interpret appropriate metrics for regression, classification, or clustering models to the base case/null scenario/benchmark against your majority class.
+>> Prepare your model for deployment and [Model Persistance](http://scikit-learn.org/stable/modules/model_persistence.html)
 
-### Part 4: Presentation Design
-> _Please prepare your Presentation with this Presentation Skeleton for for Data Science, Solution Engineering & Customer Experience_
+### Part 4: Presentation Design Guidelines:
+> _Use this Presentation Skeleton for your Data Science, Solution Engineering or Customer Success Demonstration_
 
-- Title Page:
-  - Project Title 
-  - Name 
-  - Job Title, Organizational Title 
-- Agenda Page: 
-  - Sections to be covered, and time for each section 
-- Introductions: 
-  - Introduction to your Stakeholders
-  - Introduction to you 
-- Problem Statement:
-  - Describe in Depth the Problem 
-  - Solution(s) technical/non-technical to the problem 
-- Data Analysis Slide(s):
-  - Techniques, Software stack, platforms used 
-  - Data Dictionary, Feature Engineering
-  - Benchmarked or baseline metrics to discover
-  - Visualizations of analytics with business context (Maximum 2 visualizations per slide)
-- Machine Learning Slide(s):
-  - Metrics and Scoring with analytics with best scoring models and business context 
-  - Describe how metrics are scored to baseline (Model Persistence)
-- Deployment:
-  - How Machine Learning solution will be Deployed in Production
-- Conclusion Slide:
-  - Recommendations and Results with business context
-  - Future Research and Analysis 
-- Next Steps slide:
-  - Contact, Github/Gitlab URL, Presentation Link, and Call to Action 
- Appendix:
-  - Works Cited and Media Resources 
+> **1. Cover Slide:**
+>> - Project Title/Name 
+>> - Team Member Names 
+>> - Job Titles, Organizations, E-mail Addresses 
 
-#### Design and Product Requirements
-<ol>
-<li> Github Organization: Create one parent directory for your project, with separate Jupyter Notebooks for each section, a data folder, and an assets folder for images.</li>
-<li> Final presentation to be shared as a Google Slides presentation or Microsoft PowerPoint or React Native Slides</li>
-<li> Presentation to focus on business analysis, insights, and business impact with graphs, and machine learning output.  Minimal, if any, code should be shown in presentation.</li> 
-<li> Presentation should use maximum of 3 fonts.</li>
-<li> Maximum of 20 slides.</li>
-<li> Can be interpreted if sent as a cold e-mail without you presenting your report.</li>
-<li> Appendix Slide for Works Cited, Bibliography, and Links must be included.</li>
-<li> Presentation delivery to not exceed 7 minutes </li>
-<li> Presentation delivery to be for non-technical stakeholder (Also known as "Teach me like I am 5")</li>
-<li> Presentation Delivery In-Person or Zoom or Skype </li>
-<li> Be prepared for a Q&A sesssion for 3 minutes</li>
-</ol>
+> **2. Agenda Slide:** 
+>> - Topics Included and Timing
 
-#### Additional Notes
-> 1. Consider that you could save all your plots to [an overall PDF](https://stackoverflow.com/questions/17788685/python-saving-multiple-figures-into-one-pdf-file).
-> 2. You could consider a pass-through on your Jupyter notebooks to customize them with [docstrings](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html) and Markdown to polish your presentation for code review by stakeholders.
+> **3. Introduction Slide:**
+>> - Introduction to your Stakeholders
+>> - Introduction to your team 
+
+> **4. Problem Statement Slide:**
+>> - Describe Thesis, Problem Statement, or Core Problem 
+>> - Describe Solutions both technical/non-technical to the problem 
+
+> **5. Data Analysis Slides:**
+>> - Discuss Techniques, Software stack, platforms used
+>> - Discuss Data Dictionary, Feature Engineering Techniques 
+>> - Discuss Benchmarks or baseline metrics as statistical controls
+>> - Discuss data visualizations with business context (Maximum 2 visualizations per slide)
+
+> **6. Machine Learning Slides:**
+>> - Discuss the 3 Best Scoring Models or Leaderboard, metrics, and business case interpretation
+>> - Describe how robust metrics performed relative to baseline (Model Persistance)
+
+> **7. Model Deployment Slide:**
+>> - Discuss how solution will be implemented or Deployed in Production
+
+> **8. Conclusion Slide:**
+>> - Abstract of Solution Summary
+>> - Recommendations and Results with applied business context
+>> - Additional Research and Analysis
+
+> **9. Next Steps Slide:**
+>> - Contact information, Github/Gitlab URL, Presentation Link, and Call to Action
+
+> **10. Appendix Slides**
+>> - Works Cited and Media Resources 
+
+#### Part 5: Project Submission Guidelines:
+> _Submit the following requirements for your project to be considered complete_
+
+> **1. Code Requirements:**
+>> - To share with your Advisors on Github, Gitlab, or Bitbucket Repository
+>> - To share all code files, Jupyter Notebooks or Script files, data/database files, and digital assets to be shared in a private repository
+>> - To Include markdown, LateX, HTML, or Restructured Text to document your Jupyter Notebooks, and to include Comments and Docstrings where relevant for code
+>> - To share Final Presentation as PowerPoint AND Adobe PDF
+>> - To save and share all graphs and visualizations as separate PNG files in an Images folder, and as a [PDF document](https://stackoverflow.com/questions/17788685/python-saving-multiple-figures-into-one-pdf-file)
+
+> **2. Slides Requirements:**
+>> - To focus PowerPoint presentation on applied business use case, analysis, insights, and business impact
+>> - To not focus PowerPoint presentation on code
+>> - To use less than 3 fonts in Presentation
+>> - To include less than 20 slides in Presentation
+>> - To present under 7 minutes talking time for Presentation
+>> - To practice and prepare for remarks on 3 minutes Questions & Answers for business stakeholders and executive sponsors
 
 ## Licenses
 License
