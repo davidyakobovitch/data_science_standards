@@ -14,6 +14,7 @@ The Data Science Standards are a proven process at both the university and the b
 Foundational Literature:
 1. [How to ask Data Science questions](https://towardsdatascience.com/how-to-ask-questions-data-science-can-solve-e073d6a06236)
 2. [Asking insightful questions](https://amplitude.com/blog/2015/07/01/question-the-data-how-to-ask-the-right-questions-to-get-actionable-insights)
+3. [Data Questionnaire](https://www.fast.ai/2020/01/07/data-questionnaire/)
 
 ## Data Science Project Deliverables:
 1. Part 1: Project Proposal Criteria - Prepare an Abstract as both a Document and a PowerPoint (Start with 3 to 6 project ideas)
