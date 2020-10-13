@@ -26,7 +26,7 @@ Foundational Literature:
 ### Part 1: Project Proposal Guidelines:
 > _Please prepare your project proposal as a sharable document, and a PowerPoint presentation_
 1. Project Title
-- What is your Project Theme?
+- What is your Project Theme (I.e., Industry/Type of Machine Learning)?
 - What is an Abstract - 1 paragraph Executive Summary of your Solution?
 2. Problem Statement & Business Case
 - What is the technical problem you are solving?
@@ -35,10 +35,10 @@ Foundational Literature:
 3. Data Science Workflow 
 - What Null/Alternative Hypothesis are you testing against?
   - Does X Predict Y? (I.e., Distinct groups, key components, outliers)
-- What is the response that is important for you to measure?
+- What is the response column/predictor that is important for you to measure?
 - What assumptions are important for you to assess and to benchmark?
 - What solutions would you like to deliver against?
-- What benchmarks are you looking to automate?
+- How will you measure your benchmarks and their performance drift over time (I.e., Automate jobs/predictive monitoring)?
 - What alternative questions would you like to explore and provide solutions?
 - What analytics and insights would you like to discover from your data? - What types of graphics or machine learnings would you like to discover?
 - What is the business case for your project? 
@@ -58,7 +58,7 @@ Foundational Literature:
 - Which model architecture(s) will you use to solve your problem?
 - How will you validate the model performance?
 7. Model Persistence: Deployment, Training, & Data Pipelines
-- How would your results operate LIVE in a production environment?
+- How would your results operate LIVE in a production environment? (I.e., Web App, Architecture flow, DAG diagram, end-to-end workflow)
 - What technology stack, what integrations, and which Engineers would you cooperate?
 - Where will you share your results internally or externally to stakeholders through Marketing, Implementation and Deployments?
 - How will you validate your machine learnings with a timeline from development to production?  How will you generate more data to train?
