@@ -1,7 +1,7 @@
 <font size="6em"><strong>Data Science Standards</strong></font>
 <br>
 <strong>What are the Data Science Standards?</strong>
-The Data Science Standards are a proven process at both the university and the bootcamp level for students to create production grade machine learning for their portfolio, to excel in the job interview.  This process has been stress-tested with over 2,000 students and offers you the following:
+The Data Science Standards are a proven process at both the university and the bootcamp level for students to create production grade machine learning for their portfolio, to excel in the job interview.  This process has been stress-tested with over 5,000 students and offers you the following:
 
 <ul>
 <li> A Framework that leads to confidence with client success and career interviews</li>
@@ -26,8 +26,8 @@ Foundational Literature:
 ### Part 1: Project Proposal Guidelines:
 > _Please prepare your project proposal as a sharable document, and a PowerPoint presentation_
 1. Project Title
-- What is your Project Theme (I.e., Industry/Type of Machine Learning)?
-- What is an Abstract - 1 paragraph Executive Summary of your Solution?
+- What is your Project Theme (I.e., Industry Vertical/Machine Learning Topic)?
+- What is your Abstract? Write a 1-paragraph Executive Summary of your Solution.
 2. Problem Statement & Business Case
 - What is the technical problem you are solving?
 - What is the applied business case for this problem? 
@@ -45,10 +45,12 @@ Foundational Literature:
 - How will your solution help generate revenue, reduce costs, or impact another Key Performance Indicator or Objective Key Result?
 - Who will be impacted (Executive Stakeholders/Sponsors) by your solution? Who is your ideal client/customer?
 4. Data Collection
-- What raw datasets will you extract for machine learning?
+- What raw datasets/APIs will you extract for machine learning?
+- What are the data schemas for your current datasets (I.e., SQL, CSVs, Parquet, Avro, Snowflake/Star)
+- What are the dimensions and sizing (I.e., MB/GB/TB/PB) of your current datasets?
 - Is the data from open-source, paid crowdsourcing, internal?
 - What is the structures, file types, and quality of the data?
-- How will you collect the data?
+- How will you collect, store, and process the data (I.e., locally, databases, cloud)?
 - Of your known data, what is the current data dictionaries that exist, or that you can further describe? (You can create these data dictionaries in a spreadsheet, markdown table, or listed)
 5. Data Processing, Preparation, & Feature Engineering
 - What techniques will you use to improve your data quality?
